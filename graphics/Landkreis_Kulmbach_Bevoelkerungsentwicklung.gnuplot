@@ -26,7 +26,7 @@ set xrange ['01.12.1840':'31.12.2015']
 # Der Zahlenwert entspricht einem Jahr mit 365,25 Tagen
 set xtics '01.12.1840',315576000,'31.12.2015'
 # Zehnjahresintervall in 9 Intervalle unterteilt (jedes Jahr eine Markierung)
-set mxtics 9
+set mxtics 10
 set format x '%Y'
 
 set ylabel 'Einwohnerzahl'
