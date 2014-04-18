@@ -21,10 +21,10 @@ set grid
 
 set xdata time
 set xlabel 'Jahr'
-set xrange ['01.12.1840':'31.12.2015']
-# Jahreszahl alle 10 Jahre (Beginn,Erhoehung in 10 Sekunden,Ende)
+set xrange ['01.12.1840':'31.12.2012']
+# Jahreszahl alle 10 Jahre (Beginn,Erhoehung in 0,1 Sekunden,Ende)
 # Der Zahlenwert entspricht einem Jahr mit 365,25 Tagen
-set xtics '01.12.1840',315576000,'31.12.2015'
+set xtics '31.12.1839',315576000,'31.12.2015'
 # Zehnjahresintervall in 9 Intervalle unterteilt (jedes Jahr eine Markierung)
 set mxtics 10
 set format x '%Y'
@@ -35,7 +35,6 @@ set ytics 2000
 # weitere Unterteilung ohne Beschriftung
 set mytics 2
 set yrange ['0':'20000']
-set format y '%.0f'
 
 
 set terminal svg size 800,400 font 'Arial,10'
@@ -63,6 +62,7 @@ plot '-' using 1:($2) with filledcurves below x1 linetype rgb 'dark-blue' linewi
 	31.12.2009;17437
 	31.12.2010;17279
 	31.12.2011;17201
+	31.12.2012;16967
 EOF
 	01.12.1840;7528
 	01.12.1871;8918
@@ -83,4 +83,5 @@ EOF
 	31.12.2009;17437
 	31.12.2010;17279
 	31.12.2011;17201
+	31.12.2012;16967
 EOF
