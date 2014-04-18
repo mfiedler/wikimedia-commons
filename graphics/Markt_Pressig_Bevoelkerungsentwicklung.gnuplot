@@ -21,8 +21,8 @@ set grid
 
 set xdata time
 set xlabel 'Jahr'
-set xrange ['01.12.1840':'31.12.2015']
-# Jahreszahl alle 10 Jahre (Beginn,Erhoehung in 10 Sekunden,Ende)
+set xrange ['01.12.1840':'31.12.2012']
+# Jahreszahl alle 10 Jahre (Beginn,Erhoehung in 0.1 Sekunden,Ende)
 # Der Zahlenwert entspricht einem Jahr mit 365,25 Tagen
 set xtics '01.12.1840',315576000,'31.12.2015'
 # Zehnjahresintervall in 9 Intervalle unterteilt (jedes Jahr eine Markierung)
@@ -62,7 +62,8 @@ plot '-' using 1:($2) with filledcurves below x1 linetype rgb 'dark-blue' linewi
 	31.12.2008;4190
 	31.12.2009;4155
 	31.12.2010;4123
-	31.12.2011;4084
+	31.12.2011;3998  # Fortschreibung Zensus 2011 laut https://www.statistikdaten.bayern.de/genesis/
+	31.12.2012;3974
 EOF
 	01.12.1840;2031
 	01.12.1871;2436
@@ -82,5 +83,6 @@ EOF
 	31.12.2008;4190
 	31.12.2009;4155
 	31.12.2010;4123
-	31.12.2011;4084
+	31.12.2011;3998  # Fortschreibung Zensus 2011 laut https://www.statistikdaten.bayern.de/genesis/
+	31.12.2012;3974
 EOF
