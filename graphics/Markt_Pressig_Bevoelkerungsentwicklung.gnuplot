@@ -44,15 +44,21 @@ set output 'Markt_Pressig_Bevoelkerungsentwicklung.svg'
 # '-' nimmt die nachfolgenden Daten als Eingabewerte
 plot '-' using 1:($2) with filledcurves below x1 linetype rgb 'dark-blue' linewidth 2, \
 	    '-' using 1:($2) with impulses linecolor rgbcolor 'dark-red' linewidth 1.5
+	# Daten zum Teil aus https://www.statistikdaten.bayern.de/genesis/
 	01.12.1840;2031
 	01.12.1871;2436
 	01.12.1900;2804
 	16.06.1925;3991
 	17.05.1939;4098
 	13.09.1950;5553
+	31.12.1960;5031
 	06.06.1961;5035
 	27.05.1970;5059
+	31.12.1970;5054
+	31.12.1980;4564
 	25.05.1987;4498
+	31.12.1990;4505
+	31.12.2000;4379
 	31.12.2002;4350
 	31.12.2003;4313
 	31.12.2004;4322
@@ -65,15 +71,21 @@ plot '-' using 1:($2) with filledcurves below x1 linetype rgb 'dark-blue' linewi
 	31.12.2011;3998  # Fortschreibung Zensus 2011 laut https://www.statistikdaten.bayern.de/genesis/
 	31.12.2012;3974
 EOF
+	# Daten zum Teil aus https://www.statistikdaten.bayern.de/genesis/
 	01.12.1840;2031
 	01.12.1871;2436
 	01.12.1900;2804
 	16.06.1925;3991
 	17.05.1939;4098
 	13.09.1950;5553
+	31.12.1960;5031
 	06.06.1961;5035
 	27.05.1970;5059
+	31.12.1970;5054
+	31.12.1980;4564
 	25.05.1987;4498
+	31.12.1990;4505
+	31.12.2000;4379
 	31.12.2002;4350
 	31.12.2003;4313
 	31.12.2004;4322

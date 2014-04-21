@@ -21,11 +21,10 @@ set grid
 
 set xdata time
 set xlabel 'Jahr'
-set xrange ['01.12.1840':'31.12.2015']
-# Jahreszahl alle 10 Jahre (Beginn,Erhoehung in 10 Sekunden,Ende)
+# Jahreszahl alle 10 Jahre (Beginn,Erhoehung in 0.1 Sekunden,Ende)
 # Der Zahlenwert entspricht einem Jahr mit 365,25 Tagen
-set xtics '01.12.1840',315576000,'31.12.2015'
-# Zehnjahresintervall in 9 Intervalle unterteilt (jedes Jahr eine Markierung)
+set xtics '01.12.1840',315576000,'31.12.2020'
+# jedes Jahr eine Markierung)
 set mxtics 10
 set format x '%Y'
 
@@ -34,7 +33,7 @@ set ylabel 'Einwohnerzahl'
 set ytics 10000
 # weitere Unterteilung ohne Beschriftung
 set mytics 2
-set yrange ['0':'100000']
+set yrange ['0':'90000']
 set format y '%.0f'
 
 
@@ -44,15 +43,21 @@ set output 'Landkreis_Kronach_Bevoelkerungsentwicklung.svg'
 # '-' nimmt die nachfolgenden Daten als Eingabewerte
 plot '-' using 1:($2) with filledcurves below x1 linetype rgb 'dark-blue' linewidth 2, \
 	    '-' using 1:($2) with impulses linecolor rgbcolor 'dark-red' linewidth 1.5
+	# Daten zum Teil aus https://www.statistikdaten.bayern.de/genesis/
 	01.12.1840;40458
 	01.12.1871;46943
 	01.12.1900;49409
 	16.06.1925;59371
 	17.05.1939;62511
 	13.09.1950;82002
+	31.12.1960;79136
 	06.06.1961;79501
 	27.05.1970;80716
+	31.12.1970;80615
+	31.12.1980;76405
 	25.05.1987;75353
+	31.12.1990;76670
+	31.12.2000;75591
 	31.12.2002;75038
 	31.12.2003;74582
 	31.12.2004;74275
@@ -62,17 +67,24 @@ plot '-' using 1:($2) with filledcurves below x1 linetype rgb 'dark-blue' linewi
 	31.12.2008;71609
 	31.12.2009;70941
 	31.12.2010;70106
-	31.12.2011;69546
+	31.12.2011;69599	# Fortschreibung des Zensus 2011 laut https://www.statistikdaten.bayern.de/genesis/
+	31.12.2012;69095
 EOF
+	# Daten zum Teil aus https://www.statistikdaten.bayern.de/genesis/
 	01.12.1840;40458
 	01.12.1871;46943
 	01.12.1900;49409
 	16.06.1925;59371
 	17.05.1939;62511
 	13.09.1950;82002
+	31.12.1960;79136
 	06.06.1961;79501
 	27.05.1970;80716
+	31.12.1970;80615
+	31.12.1980;76405
 	25.05.1987;75353
+	31.12.1990;76670
+	31.12.2000;75591
 	31.12.2002;75038
 	31.12.2003;74582
 	31.12.2004;74275
@@ -82,5 +94,6 @@ EOF
 	31.12.2008;71609
 	31.12.2009;70941
 	31.12.2010;70106
-	31.12.2011;69546
+	31.12.2011;69599	# Fortschreibung des Zensus 2011 laut https://www.statistikdaten.bayern.de/genesis/
+	31.12.2012;69095
 EOF

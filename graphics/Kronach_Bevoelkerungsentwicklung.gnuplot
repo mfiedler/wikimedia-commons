@@ -43,15 +43,21 @@ set output 'Kronach_Bevoelkerungsentwicklung.svg'
 # '-' nimmt die nachfolgenden Daten als Eingabewerte
 plot '-' using 1:($2) with filledcurves below x1 linetype rgb 'dark-blue' linewidth 2, \
 	    '-' using 1:($2) with impulses linecolor rgbcolor 'dark-red' linewidth 1.5
+	# Daten zum Teil aus https://www.statistikdaten.bayern.de/genesis/
 	01.12.1840;7528
 	01.12.1871;8918
 	01.12.1900;10178
 	16.06.1925;12651
 	17.05.1939;13239
 	13.09.1950;17559
+	31.12.1960;18288
 	06.06.1961;18456
+	31.12.1970;18883
 	27.05.1970;18890
+	31.12.1980;18363
 	25.05.1987;18401
+	31.12.1990;18604
+	31.12.2000;18227
 	31.12.2002;18331
 	31.12.2003;18289
 	31.12.2004;18258
@@ -64,15 +70,21 @@ plot '-' using 1:($2) with filledcurves below x1 linetype rgb 'dark-blue' linewi
 	31.12.2011;17201
 	31.12.2012;16967
 EOF
+	# Daten zum Teil aus https://www.statistikdaten.bayern.de/genesis/
 	01.12.1840;7528
 	01.12.1871;8918
 	01.12.1900;10178
 	16.06.1925;12651
 	17.05.1939;13239
 	13.09.1950;17559
+	31.12.1960;18288
 	06.06.1961;18456
+	31.12.1970;18883
 	27.05.1970;18890
+	31.12.1980;18363
 	25.05.1987;18401
+	31.12.1990;18604
+	31.12.2000;18227
 	31.12.2002;18331
 	31.12.2003;18289
 	31.12.2004;18258
