@@ -12,7 +12,7 @@ set style fill transparent solid 0.3
 set grid
 
 set xlabel 'Jahr (jeweils 31.12.)'
-set xrange [1994:2012]
+set xrange [1994:2013]
 # Jahreszahl alle 2 Jahre
 set xtics 2
 # nochmal in zwei Teilintervalle unterteilen (jedes Jahr eine Markierung)
@@ -52,6 +52,7 @@ plot '-' using 1:2 with filledcurves below x1 linetype rgb 'dark-blue' linewidth
 	2010 59954
 	2011 59249
 	2012 57802
+	2013 57252
 EOF
 	1994 71454
 	1995 70721
@@ -72,4 +73,5 @@ EOF
 	2010 59954
 	2011 59249
 	2012 57802
+	2013 57252
 EOF
