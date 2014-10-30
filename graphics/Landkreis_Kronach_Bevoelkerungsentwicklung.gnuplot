@@ -23,7 +23,7 @@ set xlabel 'Jahr'
 # Jahreszahl alle 10 Jahre (Erhoehung in 0.1 Sekunden)
 # Der Zahlenwert entspricht einem Jahr mit 365,25 Tagen
 set xtics 315576000
-set xrange ['01.01.1840':'31.12.2012']
+set xrange ['01.01.1840':'31.12.2013']
 # jedes Jahr eine Markierung)
 set mxtics 10
 set format x '%Y'
@@ -67,6 +67,7 @@ plot '-' using 1:($2) with filledcurves below x1 linetype rgb 'dark-blue' linewi
 	31.12.2010 70106
 	31.12.2011 69599	# Fortschreibung des Zensus 2011 laut https://www.statistikdaten.bayern.de/genesis/
 	31.12.2012 69095
+	31.12.2013 68484
 EOF
 	# Daten zu  Teil aus https://www.statistikdaten.bayern.de/genesis/
 	01.12.1840 40458
@@ -94,4 +95,5 @@ EOF
 	31.12.2010 70106
 	31.12.2011 69599	# Fortschreibung des Zensus 2011 laut https://www.statistikdaten.bayern.de/genesis/
 	31.12.2012 69095
+	31.12.2013 68484
 EOF
